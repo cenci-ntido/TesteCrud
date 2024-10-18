@@ -1,30 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/lista"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:background="#F9F9F9">
 
-    <!-- Título da lista de pontos turísticos -->
-    <TextView
-        android:id="@+id/tVPontosTuristicos"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleListaPontos"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Lista de Pontos Turísticos"
-        android:textStyle="italic"
-        android:textColor="#333"
-        android:textSize="18sp"
-        android:gravity="center"
-        android:paddingBottom="16dp" />
-
-    <!-- Botão de Voltar -->
-    <Button
-        android:id="@+id/btVoltar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Voltar"
-        android:layout_gravity="center_horizontal"
-        android:backgroundTint="#FF5722"
-        android:textColor="#FFFFFF" />
-</LinearLayout>
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

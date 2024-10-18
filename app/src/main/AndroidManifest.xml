@@ -15,7 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TesteCrud"
         tools:targetApi="31">
-
+        <activity
+            android:name=".Item"
+            android:exported="false" />
         <activity
             android:name=".SplashActivity"
             android:exported="true"
@@ -25,10 +27,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".MainActivity" />
-
-
+        <activity android:name=".Lista" />
     </application>
 
 </manifest>
